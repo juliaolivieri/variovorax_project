@@ -14,7 +14,7 @@ Run:
 
 `bash sraWrapper.sh AccList.txt`
 
-## Step 2: Download the genome
+## Step 3: Download the genome
 
 To download genome (ASM18474v1, EPS), run the following two commands on the cluster:
 
@@ -22,7 +22,24 @@ To download genome (ASM18474v1, EPS), run the following two commands on the clus
 
 `unzip data.zip`
 
-## Step 3: Create the index for the aligner you're using
+
+## Step 4: Create conda environment (for bowtie2)
+
+Follow the directions here:
+`https://github.com/juliaolivieri/COMP_293C_Computational_Biology/tree/main/homework3_anaconda`
+
+This will be needed to download the requisite software
+
+## Step 4: Download kallisto
+
+`wget https://github.com/pachterlab/kallisto/releases/download/v0.46.1/kallisto_linux-v0.46.1.tar.gz`
+
+`tar -xvf kallisto_linux-v0.46.1.tar.gz`
+
+Add kallisto to path
+	 
+
+## Step 5: Create the index for the aligner you're using
 
 Edit the `run_index` script for the aligner you're using. You will need to change the fasta path.
 
