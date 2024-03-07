@@ -6,6 +6,14 @@ Run the following line of code on the cluster:
 
 `git clone https://github.com/juliaolivieri/variovorax_project.git`
 
+## Step 2: Download the data
+
+Download sra toolkit/install
+
+Run:
+
+`bash sraWrapper.sh AccList.txt`
+
 ## Step 2: Download the genome
 
 To download genome (ASM18474v1, EPS), run the following two commands on the cluster:
